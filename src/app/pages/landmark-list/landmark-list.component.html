@@ -1,0 +1,135 @@
+<div class="landmark-list-container">
+  <!-- Header -->
+  <div class="list-header">
+    <button class="back-button" (click)="goBack()">
+      ← Back
+    </button>
+    <h1>Explore Dallas</h1>
+    <p class="subtitle">{{ landmarks().length }} landmarks to discover</p>
+  </div>
+
+  <!-- Loading State -->
+  @if (isLoading()) {
+    <div class="loading-state">
+      <div class="loading-spinner"></div>
+      <p>Finding landmarks near you...</p>
+    </div>
+  }
+
+  <!-- Landmark Cards -->
+  @if (!isLoading()) {
+    <div class="landmarks-grid">
+      @for (landmark of landmarks(); track landmark.id) {
+        <div class="landmark-card" (click)="onLandmarkTap(landmark)">
+          <div class="card-content">
+            <div class="card-main">
+              <h3 class="landmark-name">{{ landmark.name }}</h3>
+              @if (landmark.formattedDistance) {
+                <span class="landmark-distance">
+                  📍 {{ landmark.formattedDistance }} away
+                </span>
+              }
+            </div>
+            
+            <div class="card-tags">
+              @for (tag of landmark.tags; track tag) {
+                <span 
+                  class="tag-pill" 
+                  [class.matched]="isUserInterest(tag)">
+                  {{ getTagIcon(tag) }} {{ getTagLabel(tag) }}
+                </span>
+              }
+            </div>
+          </div>
+          
+          <div class="card-arrow">→</div>
+        </div>
+      }
+    </div>
+    
+    @if (landmarks().length === 0) {
+      <div class="empty-state">
+        <span class="empty-icon">🏛️</span>
+        <p>No landmarks found</p>
+      </div>
+    }
+  }
+</div>
+
+<!-- Action Sheet -->
+@if (showActionSheet()) {
+  <div class="action-sheet-overlay" (click)="closeActionSheet()"></div>
+  
+  <div class="action-sheet">
+    <div class="sheet-handle"></div>
+    
+    <h3 class="sheet-title">{{ selectedLandmark()?.name }}</h3>
+    
+    <div class="sheet-actions">
+      <button class="action-option" (click)="viewInAR()">
+        <span class="action-icon">📱</span>
+        <span class="action-label">View in AR</span>
+        <span class="action-arrow">→</span>
+      </button>
+      
+      <button class="action-option" (click)="readExplanation()">
+        <span class="action-icon">📖</span>
+        <span class="action-label">Read Explanation</span>
+        <span class="action-arrow">→</span>
+      </button>
+    </div>
+    
+    <button class="cancel-button" (click)="closeActionSheet()">
+      Cancel
+    </button>
+  </div>
+}
+
+<!-- Explanation Bottom Sheet -->
+@if (showExplanation()) {
+  <div class="sheet-overlay" (click)="closeExplanation()"></div>
+  
+  <div class="bottom-sheet explanation-sheet">
+    <div class="sheet-handle"></div>
+    <button class="close-button" (click)="closeExplanation()">✕</button>
+    
+    @if (isLoadingExplanation()) {
+      <div class="skeleton-container">
+        <div class="skeleton skeleton-title"></div>
+        <div class="skeleton skeleton-line"></div>
+        <div class="skeleton skeleton-line short"></div>
+        <div class="skeleton skeleton-line shorter"></div>
+      </div>
+    } @else if (currentExplanation()) {
+      <div class="explanation">
+        <div class="explanation-header">
+          <h2>{{ currentExplanation()?.name }}</h2>
+          @if (isOfflineContent()) {
+            <span class="offline-badge">📱 Offline</span>
+          }
+        </div>
+        
+        @if (matchedInterest()) {
+          <div class="interest-badge">
+            ✨ Because you like {{ matchedInterest() }}
+          </div>
+        }
+        
+        <p class="explanation-text">{{ currentExplanation()?.text }}</p>
+        
+        <div class="sheet-actions-row">
+          <button class="action-btn share" (click)="shareLandmark()">
+            <span class="action-icon">📤</span>
+            Share
+          </button>
+          @if (!isPremium()) {
+            <button class="action-btn premium" (click)="showPaywall.emit()">
+              <span class="action-icon">⭐</span>
+              Save Offline
+            </button>
+          }
+        </div>
+      </div>
+    }
+  </div>
+}

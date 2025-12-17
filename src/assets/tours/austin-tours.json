@@ -1,0 +1,98 @@
+{
+  "tours": [
+    {
+      "id": "austin_historic",
+      "name": "Historic Austin",
+      "description": "Walk through Texas history from the Capitol to Congress Avenue",
+      "duration": 45,
+      "distance": 1.8,
+      "isPremium": false,
+      "landmarks": [
+        {
+          "id": "texas_state_capitol",
+          "name": "Texas State Capitol",
+          "lat": 30.2747,
+          "lng": -97.7404,
+          "order": 1,
+          "tags": ["history", "architecture"]
+        },
+        {
+          "id": "congress_avenue_bridge",
+          "name": "Congress Avenue Bridge",
+          "lat": 30.2614,
+          "lng": -97.7453,
+          "order": 2,
+          "tags": ["hidden", "nature"]
+        },
+        {
+          "id": "south_congress",
+          "name": "South Congress (SoCo)",
+          "lat": 30.2489,
+          "lng": -97.7498,
+          "order": 3,
+          "tags": ["food", "hidden", "architecture"]
+        }
+      ]
+    },
+    {
+      "id": "austin_nature",
+      "name": "Nature and Springs",
+      "description": "Discover Austin's famous natural springs and green spaces",
+      "duration": 60,
+      "distance": 2.5,
+      "isPremium": false,
+      "landmarks": [
+        {
+          "id": "zilker_park",
+          "name": "Zilker Park",
+          "lat": 30.2669,
+          "lng": -97.7729,
+          "order": 1,
+          "tags": ["nature", "hidden"]
+        },
+        {
+          "id": "barton_springs",
+          "name": "Barton Springs Pool",
+          "lat": 30.2641,
+          "lng": -97.7713,
+          "order": 2,
+          "tags": ["nature", "hidden", "food"]
+        }
+      ]
+    },
+    {
+      "id": "austin_culture",
+      "name": "Live Music & Culture",
+      "description": "Experience the Live Music Capital of the World",
+      "duration": 75,
+      "distance": 3.2,
+      "isPremium": true,
+      "landmarks": [
+        {
+          "id": "south_congress",
+          "name": "South Congress (SoCo)",
+          "lat": 30.2489,
+          "lng": -97.7498,
+          "order": 1,
+          "tags": ["food", "hidden", "architecture"]
+        },
+        {
+          "id": "congress_avenue_bridge",
+          "name": "Congress Avenue Bridge",
+          "lat": 30.2614,
+          "lng": -97.7453,
+          "order": 2,
+          "tags": ["hidden", "nature"]
+        },
+        {
+          "id": "texas_state_capitol",
+          "name": "Texas State Capitol",
+          "lat": 30.2747,
+          "lng": -97.7404,
+          "order": 3,
+          "tags": ["history", "architecture"]
+        }
+      ]
+    }
+  ]
+}

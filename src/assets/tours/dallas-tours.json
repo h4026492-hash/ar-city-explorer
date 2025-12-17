@@ -1,0 +1,78 @@
+{
+  "tours": [
+    {
+      "id": "dallas-historic-downtown",
+      "title": "Historic Downtown Dallas",
+      "description": "Walk through the heart of Dallas and discover the stories behind its most iconic landmarks. From the Kennedy memorial to the historic West End, experience 150 years of Texas history on foot.",
+      "cityId": "dallas",
+      "landmarkIds": [
+        "reunion-tower",
+        "dealey-plaza",
+        "old-red-museum",
+        "jfk-memorial",
+        "pioneer-plaza"
+      ],
+      "durationMinutes": 75,
+      "distanceMeters": 3200,
+      "isPremium": true,
+      "previewLandmarkCount": 2,
+      "difficulty": "easy",
+      "theme": "history"
+    },
+    {
+      "id": "dallas-architecture",
+      "title": "Architecture Highlights",
+      "description": "Explore Dallas through its stunning architecture. From Art Deco gems to modern skyscrapers, see how the city's skyline tells the story of Texas ambition and innovation.",
+      "cityId": "dallas",
+      "landmarkIds": [
+        "reunion-tower",
+        "bank-of-america-plaza",
+        "perot-museum",
+        "at-and-t-discovery-district",
+        "klyde-warren-park"
+      ],
+      "durationMinutes": 90,
+      "distanceMeters": 4100,
+      "isPremium": true,
+      "previewLandmarkCount": 2,
+      "difficulty": "moderate",
+      "theme": "architecture"
+    },
+    {
+      "id": "dallas-hidden-stories",
+      "title": "Hidden Dallas Stories",
+      "description": "Discover the secrets locals know. This tour takes you off the beaten path to uncover the fascinating stories, hidden art, and local legends that make Dallas unique.",
+      "cityId": "dallas",
+      "landmarkIds": [
+        "deep-ellum-murals",
+        "giant-eyeball",
+        "thanks-giving-square",
+        "majestic-theatre",
+        "dallas-farmers-market"
+      ],
+      "durationMinutes": 60,
+      "distanceMeters": 2800,
+      "isPremium": true,
+      "previewLandmarkCount": 1,
+      "difficulty": "easy",
+      "theme": "local"
+    },
+    {
+      "id": "dallas-arts-district",
+      "title": "Arts District Walk",
+      "description": "Experience the largest contiguous urban arts district in the United States. From world-class museums to stunning public art, this free introductory tour showcases Dallas's cultural heart.",
+      "cityId": "dallas",
+      "landmarkIds": [
+        "dallas-museum-of-art",
+        "nasher-sculpture-center",
+        "klyde-warren-park"
+      ],
+      "durationMinutes": 45,
+      "distanceMeters": 1800,
+      "isPremium": false,
+      "previewLandmarkCount": 3,
+      "difficulty": "easy",
+      "theme": "art"
+    }
+  ]
+}

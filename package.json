@@ -6,6 +6,14 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "dev:web": "ng build --watch --configuration development",
+    "cap:copy": "npx cap copy ios",
+    "cap:sync": "npx cap sync ios",
+    "dev:watch-copy": "chokidar 'dist/**' -c 'npx cap copy ios' --initial",
+    "dev:logs": "bash -c 'idevicesyslog > /tmp/idevicesyslog.log & echo $! > .idevicesyslog.pid && echo started'",
+    "ios:launch": "ios-deploy --id $IOS_DEVICE_ID --justlaunch",
+    "ios:install": "xcodebuild -project ios/App/App.xcodeproj -scheme App -destination 'id=$IOS_DEVICE_ID' -allowProvisioningUpdates install",
+    "fast:deploy": "bash scripts/fast-deploy.sh",
     "test": "ng test",
     "serve:ssr:ar-city-explorer": "node dist/ar-city-explorer/server/server.mjs"
   },
@@ -32,6 +40,9 @@
     "@angular/platform-server": "^21.0.0",
     "@angular/router": "^21.0.0",
     "@angular/ssr": "^21.0.2",
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
@@ -40,10 +51,16 @@
     "@angular/build": "^21.0.2",
     "@angular/cli": "^21.0.2",
     "@angular/compiler-cli": "^21.0.0",
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "autoprefixer": "^10.4.23",
     "jsdom": "^27.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
+    ,
+    "chokidar-cli": "^3.0.0"
   }
 }

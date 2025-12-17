@@ -1,0 +1,42 @@
+[
+  {
+    "id": "texas_state_capitol",
+    "name": "Texas State Capitol",
+    "lat": 30.2747,
+    "lng": -97.7404,
+    "tags": ["history", "architecture"],
+    "description": "The state capitol building of Texas, taller than the U.S. Capitol"
+  },
+  {
+    "id": "congress_avenue_bridge",
+    "name": "Congress Avenue Bridge",
+    "lat": 30.2614,
+    "lng": -97.7453,
+    "tags": ["hidden", "nature"],
+    "description": "Home to the world's largest urban bat colony"
+  },
+  {
+    "id": "zilker_park",
+    "name": "Zilker Park",
+    "lat": 30.2669,
+    "lng": -97.7729,
+    "tags": ["nature", "hidden"],
+    "description": "351-acre metropolitan park along Barton Creek"
+  },
+  {
+    "id": "barton_springs",
+    "name": "Barton Springs Pool",
+    "lat": 30.2641,
+    "lng": -97.7713,
+    "tags": ["nature", "hidden", "food"],
+    "description": "Natural spring-fed pool maintained at 68-70°F year-round"
+  },
+  {
+    "id": "south_congress",
+    "name": "South Congress (SoCo)",
+    "lat": 30.2489,
+    "lng": -97.7498,
+    "tags": ["food", "hidden", "architecture"],
+    "description": "Eclectic shopping and dining district with Austin's iconic 'I Love You So Much' mural"
+  }
+]

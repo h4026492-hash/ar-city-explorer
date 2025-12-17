@@ -1,0 +1,20 @@
+{
+  "reunion_tower": {
+    "name": "Reunion Tower",
+    "text": "You're looking at Dallas's most iconic landmark – Reunion Tower. That glowing geodesic dome sits 561 feet up, and those 259 lights can display over a million color combinations.\n\nBuilt in 1978, this was Dallas saying to the world: 'We're a major city now.' The architect was Welton Becket – same guy who designed the Capitol Records building in LA.\n\n💡 Fun fact: The dome rotates once every 55 minutes. Time your dinner at Five Sixty to catch the sunset!\n\n📍 Local tip: Happy hour at Five Sixty has the same views, half the price.",
+    "funFact": "The dome rotates once every 55 minutes.",
+    "localTip": "Happy hour at Five Sixty has the same views, half the price."
+  },
+  "dealey_plaza": {
+    "name": "Dealey Plaza",
+    "text": "This is THE spot. November 22, 1963 – President Kennedy was shot right here. The Texas School Book Depository behind you is where Oswald fired from. Standing here, you feel the weight of that day.\n\nLook at the street – see those 'X' marks? Locals painted those marking where the shots hit. Totally unofficial, but nobody removes them.\n\n💡 Fun fact: The Warren Commission concluded it was Oswald, but conspiracy theories still swirl 60 years later.\n\n📍 Local tip: The Sixth Floor Museum has the actual sniper's perch. Chilling but essential.",
+    "funFact": "The X marks on the street are painted by locals and never removed.",
+    "localTip": "The Sixth Floor Museum has the actual sniper's perch."
+  },
+  "dallas_museum_art": {
+    "name": "Dallas Museum of Art",
+    "text": "One of America's best free museums – seriously, no admission! The DMA has over 24,000 works spanning 5,000 years, from ancient Egypt to contemporary masters.\n\nThe building itself is the art. Edward Larrabee Barnes designed the 1984 wing with that iconic barrel vault. The 2009 Renzo Piano addition is pure genius – all natural light, no direct sun on the art.\n\n💡 Fun fact: There's a Jackson Pollock you can get within inches of – no glass, no ropes.\n\n📍 Local tip: Thursday Late Nights have cocktails and live music. Very Dallas.",
+    "funFact": "There's a Jackson Pollock you can get within inches of.",
+    "localTip": "Thursday Late Nights have cocktails and live music."
+  }
+}

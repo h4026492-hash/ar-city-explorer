@@ -1,0 +1,25 @@
+{
+  "landmarks": [
+    {
+      "id": "reunion_tower",
+      "name": "Reunion Tower",
+      "lat": 32.7755,
+      "lng": -96.8089,
+      "tags": ["architecture", "history", "food"]
+    },
+    {
+      "id": "dealey_plaza",
+      "name": "Dealey Plaza",
+      "lat": 32.7789,
+      "lng": -96.8083,
+      "tags": ["history", "hidden"]
+    },
+    {
+      "id": "dallas_museum_art",
+      "name": "Dallas Museum of Art",
+      "lat": 32.7876,
+      "lng": -96.8010,
+      "tags": ["architecture", "history", "hidden"]
+    }
+  ]
+}

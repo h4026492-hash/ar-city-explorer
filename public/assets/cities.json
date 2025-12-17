@@ -1,0 +1,48 @@
+{
+  "cities": [
+    {
+      "id": "dallas",
+      "name": "Dallas",
+      "country": "USA",
+      "centerLat": 32.7767,
+      "centerLng": -96.7970,
+      "isAvailable": true,
+      "isPremium": false,
+      "landmarkCount": 12,
+      "description": "Explore the Big D's historic landmarks and modern marvels"
+    },
+    {
+      "id": "austin",
+      "name": "Austin",
+      "country": "USA",
+      "centerLat": 30.2672,
+      "centerLng": -97.7431,
+      "isAvailable": true,
+      "isPremium": false,
+      "landmarkCount": 5,
+      "description": "Keep Austin weird with AR-powered exploration"
+    },
+    {
+      "id": "houston",
+      "name": "Houston",
+      "country": "USA",
+      "centerLat": 29.7604,
+      "centerLng": -95.3698,
+      "isAvailable": false,
+      "isPremium": false,
+      "landmarkCount": 0,
+      "description": "Space City awaits your discovery"
+    },
+    {
+      "id": "san-antonio",
+      "name": "San Antonio",
+      "country": "USA",
+      "centerLat": 29.4241,
+      "centerLng": -98.4936,
+      "isAvailable": false,
+      "isPremium": true,
+      "landmarkCount": 0,
+      "description": "Remember the Alamo and more with AR"
+    }
+  ]
+}
