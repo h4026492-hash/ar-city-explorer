@@ -1,3 +1,25 @@
+# AR City Explorer
+
+Native AR city explorer — Angular + Capacitor + ARKit for landmark experiences.
+
+This repo contains the Angular web app, a Capacitor plugin and an iOS app (Swift/ARKit) that renders landmarks in AR and forwards taps back to the web layer.
+
+Quick start
+
+- Install dependencies: npm install
+- Start incremental web builds: npm run dev:web
+- (Optional) Auto-copy web assets into the iOS project: npm run dev:watch-copy
+- Fast deploy to a connected iOS device: IOS_DEVICE_ID=<device-id> npm run fast:deploy
+
+Development notes
+
+- Main native AR files: `ios/App/ARViewController.swift`, `ios/App/ARCityPlugin.swift`
+- Web integration and listeners: `src/app/services/ar.service.ts` and `src/app/app.ts`
+- Fast iteration helpers and docs: `scripts/fast-deploy.sh`, `docs/DEV_FAST_ITERATION.md`
+
+License
+
+This project is licensed under the MIT License (see `LICENSE`).
 # ArCityExplorer
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
