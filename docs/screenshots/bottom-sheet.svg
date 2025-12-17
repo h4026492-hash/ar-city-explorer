@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="100%" height="100%" fill="#0b1220" />
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif">
+    <rect x="40" y="320" rx="20" ry="20" width="880" height="180" fill="#ffffff" opacity="0.95" />
+    <text x="72" y="360" font-size="22" fill="#0b1220" font-weight="700">Landmark Name</text>
+    <text x="72" y="392" font-size="16" fill="#333">Prefilled description — loading AI explanation...</text>
+    <rect x="760" y="344" rx="8" ry="8" width="120" height="36" fill="#1f8fff" />
+    <text x="794" y="368" font-size="14" fill="#fff">Distance 120 m</text>
+    <circle cx="684" cy="380" r="16" fill="#ffd84d" />
+    <text x="672" y="384" font-size="12" fill="#111">↗</text>
+  </g>
+</svg>

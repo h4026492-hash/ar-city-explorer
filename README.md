@@ -1,4 +1,7 @@
+
 # AR City Explorer
+
+![CI](https://github.com/h4026492-hash/ar-city-explorer/actions/workflows/ci.yml/badge.svg) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 Native AR city explorer — Angular + Capacitor + ARKit for landmark experiences.
 
@@ -6,10 +9,32 @@ This repo contains the Angular web app, a Capacitor plugin and an iOS app (Swift
 
 Quick start
 
-- Install dependencies: npm install
-- Start incremental web builds: npm run dev:web
-- (Optional) Auto-copy web assets into the iOS project: npm run dev:watch-copy
-- Fast deploy to a connected iOS device: IOS_DEVICE_ID=<device-id> npm run fast:deploy
+- Install dependencies: `npm install`
+- Start incremental web builds: `npm run dev:web`
+- (Optional) Auto-copy web assets into the iOS project: `npm run dev:watch-copy`
+- Fast deploy to a connected iOS device: `IOS_DEVICE_ID=<device-id> npm run fast:deploy`
+
+Screenshots / demo
+
+Below are sample screenshots (SVG placeholders). Replace these with real device screenshots or a short GIF to showcase the app.
+
+AR view (card overlays):
+
+![AR View](docs/screenshots/ar-view.svg)
+
+Bottom sheet (prefill + AI loading):
+
+![Bottom Sheet](docs/screenshots/bottom-sheet.svg)
+
+City / landmark list:
+
+![List View](docs/screenshots/list-view.svg)
+
+How to add your real screenshots
+
+1. Take screenshots on your device (iPhone): open the AR view and take screenshots of the AR overlay and the bottom sheet.
+2. Add files to `docs/screenshots/` ideally named `ar-view.png`, `bottom-sheet.png`, and `list-view.png`.
+3. Commit and push the images and update this README if you want to swap the placeholders.
 
 Development notes
 
